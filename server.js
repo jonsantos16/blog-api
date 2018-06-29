@@ -54,10 +54,10 @@ app.put('/blog-posts/:id', jsonParser, (req, res) => {
     console.log(`Updating blog id ${req.params.id}`)
     BlogPosts.update({
         id: req.params.id,
-        title: req.params.title,
-        content: req.params.content,
-        author: req.params.author,
-        publishDate: req.params.publishDate
+        title: req.body.title,
+        content: req.body.content,
+        author: req.body.author,
+        publishDate: req.body.publishDate
     });
     res.status(204).end();
 })
