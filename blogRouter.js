@@ -7,7 +7,7 @@ const jsonParser = bodyParser.json();
 const {BlogPosts} = require('./models');
 
 BlogPosts.create('Why Avengers is better than Incredibles', 'It just is.', 'Angel Fong');
-BlogPosts.create('Importance of Drinking Water', 'About 591mL', 'Jonathan Santos');
+BlogPosts.create('Importance of Drinking Water', '3.5L for bros, 2.5L for sisters', 'Jonathan Santos');
 BlogPosts.create('Tardigrades', 'Cool & tough', 'Jonathan Santos');
 
 router.get('/', (req, res) => {
